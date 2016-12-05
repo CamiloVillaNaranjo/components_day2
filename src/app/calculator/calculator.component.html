@@ -1,0 +1,79 @@
+<!-- calculator -->
+<div class="row">
+  <div class="col-xs-12 ">
+    <input type="number" [value]="expression" class="result">
+  </div>
+  <div class="col-xs-12">
+
+    <!-- First Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <primary-btn [displayText]="7" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="8" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="9" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <success-btn [displayText]="'+'" (fuckEvent)="Focked($event)"></success-btn>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <primary-btn [displayText]="4" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="5" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="6" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <success-btn [displayText]="'-'" (fuckEvent)="Focked($event)"></success-btn>
+      </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <primary-btn [displayText]="3" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="2" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="1" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <success-btn [displayText]="'*'" (fuckEvent)="Focked($event)"></success-btn>
+      </div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="row">
+      <div class="col-xs-3">
+        <primary-btn [displayText]="'0'" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="'.'" (fuckEvent)="Focked($event)"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <primary-btn [displayText]="'='" (fuckEvent)="evalExpression()"></primary-btn>
+      </div>
+      <div class="col-xs-3">
+        <success-btn [displayText]="'/'" (fuckEvent)="Focked($event)"></success-btn>
+      </div>
+    </div>
+
+    <!-- Fifth Row -->
+    <div class="row">
+      <div class="col-xs-12">
+        <danger-btn [displayText]="'Clear'" (fuckEvent)="clearExpression()"></danger-btn>
+      </div>
+    </div>
+  </div>
+</div>
